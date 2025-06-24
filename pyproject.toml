@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "project 1- application for analysis of banking operations"
+version = "0.1.0"
+description = ""
+authors = ["our ame <you@example.com>"]
+readme = "README.md"
+packages = [{include = "project 1"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

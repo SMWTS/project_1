@@ -1,7 +1,6 @@
 from datetime import datetime
-from unittest.mock import Mock, patch
 
-from src.utils import fetch_currency_rates, get_greeting, get_sp500_price, load_transactions
+from src.utils import get_greeting, get_sp500_price, load_transactions
 
 
 def test_load_transactions():
@@ -19,6 +18,7 @@ def test_get_greeting():
     assert afternoon == "Добрый день"
     assert evening == "Добрый вечер"
     assert night == "Доброй ночи"
+
 
 def test_get_sp500_price():
     price = get_sp500_price()
